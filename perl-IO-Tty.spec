@@ -1,13 +1,13 @@
 Name:           perl-IO-Tty
 Version:        1.12
-Release:        14
+Release:        15
 Summary:        A interface to pseudo tty's for perl
 License:        (GPL+ or Artistic) and BSD
 URL:            https://metacpan.org/release/IO-Tty
 Source0:        https://cpan.metacpan.org/authors/id/T/TO/TODDR/IO-Tty-%{version}.tar.gz
 BuildRequires:  coreutils findutils make perl-interpreter perl-devel perl-generators
 BuildRequires:  perl(Config) perl(Cwd) perl(Exporter) perl(ExtUtils::MakeMaker)
-BuildRequires:  perl(Carp) perl(DynaLoader) perl(IO::File) perl(IO::Handle) perl(POSIX)
+BuildRequires:  gcc perl(Carp) perl(DynaLoader) perl(IO::File) perl(IO::Handle) perl(POSIX)
 BuildRequires:  perl(strict) perl(vars) perl(Test::More) perl(warnings)
 Requires:       perl(:MODULE_COMPAT_%(eval "`perl -V:version`"; echo $version))
 
@@ -47,5 +47,8 @@ make test
 %{_mandir}/man3/{IO::Pty.3*,IO::Tty.3*,IO::Tty::Constant.3*}
 
 %changelog
+* Web 02 Jun 2021 zhaoyao<zhaoyao32@huawei.com> - 1.12-15
+- fixs faileds: /bin/sh: gcc: command not found.
+
 * Mon Feb 19 2020 wutao <wutao61@huawei.com> - 1.12-14
 - Package init
