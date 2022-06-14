@@ -47,7 +47,7 @@ make test
 %{_mandir}/man3/{IO::Pty.3*,IO::Tty.3*,IO::Tty::Constant.3*}
 
 %changelog
-* Web 02 Jun 2021 zhaoyao<zhaoyao32@huawei.com> - 1.12-15
+* Wed Jun 02 2021 zhaoyao<zhaoyao32@huawei.com> - 1.12-15
 - fixs faileds: /bin/sh: gcc: command not found.
 
 * Mon Feb 19 2020 wutao <wutao61@huawei.com> - 1.12-14
