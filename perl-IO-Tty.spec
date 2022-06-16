@@ -1,6 +1,6 @@
 Name:           perl-IO-Tty
-Version:        1.12
-Release:        15
+Version:        1.16
+Release:        1
 Summary:        A interface to pseudo tty's for perl
 License:        (GPL+ or Artistic) and BSD
 URL:            https://metacpan.org/release/IO-Tty
@@ -47,6 +47,9 @@ make test
 %{_mandir}/man3/{IO::Pty.3*,IO::Tty.3*,IO::Tty::Constant.3*}
 
 %changelog
+* Tue Jun 14 2022 SimpleUpdate Robot <tc@openeuler.org> - 1.16-1
+- Upgrade to version 1.16
+
 * Wed Jun 02 2021 zhaoyao<zhaoyao32@huawei.com> - 1.12-15
 - fixs faileds: /bin/sh: gcc: command not found.
 
